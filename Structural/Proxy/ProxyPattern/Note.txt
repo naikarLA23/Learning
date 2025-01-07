@@ -1,0 +1,23 @@
+﻿Proxy is the object the client calls to access the real object behind the scene.
+Proxy means in place of or on behalf of. That means, In the Proxy Design Pattern, a class represents the functionality of another class. 
+
+In Proxy Design Pattern, there are two states, i.e., Intrinsic and Extrinsic.
+1. Intrinsic states are things that are Constants and Stored in Memory. On the other hand, 
+2. Extrinsic states are things that are not constant and need to be calculated on the Fly; hence, they can not be stored in memory.
+
+Actors :
+1. SubjectInterface --> ISharedFolder.cs  
+2. RealSubject --> SharedFolder.cs
+3. ProxyObject --> ShareFolderProxy.cs.cs
+4. Client --> Program.cs
+
+Advantages of Proxy Design Pattern:
+1. Improve Performance using Proxy Server: The Proxy Servers can drastically improve the performance of the application.
+	This is because it saves the results of a request for a certain period of time. 
+	For example, two users, X and Y, want to access a particular resource through the Proxy Server. 
+	First, user X requests a particular resource (a list of employees), and the Proxy Server gets the data from the real server. 
+	Before sending the data to the client, it caches that resource (list of employees) for some time. Later, user Y also requests the same resource. 
+	The Proxy Server, instead of forwarding that request to the Real Server (which is a time-consuming operation), 
+	can return the data from the Cache, ultimately improving the application’s performance.\.
+2. Filter Requests using Proxy Server: The Proxy Servers can also be used to filter incoming requests. 
+	For example, a company might use a Proxy Server to prevent its employees from accessing a specific set of websites such as Facebook, Twitter, etc.

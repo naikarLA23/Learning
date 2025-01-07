@@ -1,0 +1,14 @@
+﻿
+Decorator Design Pattern is used to add new functionalities to an existing object at run time without modifying the structure of the existing objects
+
+Actors :
+1. ComponentInterface --> IPizza.cs  
+2. ConcreteComponent --> PlainPizza.cs
+3. AbstractDecorator --> AbstractPizzaDecorator.cs
+4. ConcreteDecorator --> VegPizzaDecorator.cs, ChickenDecorator.cs
+5. Client --> Program.cs
+
+Advantages of Decorator Design Pattern:
+1. Flexibility: Provides a more flexible way to add object responsibilities than static inheritance.
+2. Dynamic Responsibilities: You can add or remove responsibilities from an object at runtime.
+3. Functionality Layering: Allows for the layering of functionalities. Each decorator adds its behavior before and/or after delegating the task to the base component.
