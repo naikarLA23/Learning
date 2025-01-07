@@ -1,0 +1,17 @@
+﻿
+The Iterator Design Pattern is a Behavioral Design Pattern that allows sequential access to the elements of an aggregate object (i.e., collection)
+without exposing its underlying representation. That means using the Iterator Design Pattern,
+we can access the elements of a collection sequentially without knowing its internal representations. 
+This pattern provides a uniform interface for traversing different data structures.
+
+Actors :
+1. Iterartor --> IIterator.cs  
+2. ConcreteIterator  --> PlaylistIterator.cs  
+3. Agregator --> IAggregator.cs  
+4. ConcreteAgregator --> PlaylistAggregator.cs
+5. Client --> Program.cs
+
+When to use:
+1. When your collection has a complex data structure, and you want to hide its complexity from the client.
+2. When you want to provide a uniform interface for traversing different data structures (List, Array, collection of objects).
+3. When you need to have multiple ways of traversing a collection (Forward, Reverse)

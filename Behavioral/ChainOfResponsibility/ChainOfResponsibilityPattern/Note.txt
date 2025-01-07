@@ -1,0 +1,16 @@
+﻿
+Chain of Responsibility design pattern creates a chain of receiver objects for a given request. 
+In this design pattern, normally, each receiver contains a reference to the next receiver. 
+If one receiver cannot handle the request, it passes the same request to the next receiver, and so on. 
+
+Actors :
+1. AbstractHandler --> AbstractNoteDispenser.cs  
+2. ConcreteHandler  --> TwoThoundNoteDispenser.cs,FiveHunderNoteDispenser.cs,TwoHunderNoteDispenser.cs,OneHunderNoteDispenser.cs
+3. Chain --> ATM.cs  
+4. Client --> Program.cs
+
+Advantages of Chain of Responsibility Design Pattern:
+1. Decoupling: It decouples the sender of the request and its receivers. 
+	The sender doesn’t need to know which part of the chain will handle the request.
+2. Dynamic Handling: Handlers in the chain can be dynamically added or changed.
+3. Flexibility: Gives more flexibility in distributing responsibilities among objects.
