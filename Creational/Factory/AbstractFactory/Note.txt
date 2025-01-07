@@ -1,0 +1,14 @@
+﻿Abstract Factory is a super factory that creates other factories. It is also called the Factory of Factories. 
+The Abstract Factory design pattern provides an interface for creating families of related or dependent products but leaves the actual object creation to the concrete factory classes.
+
+Actors :
+1. Product Interface / Abstract Product --> ICourse.cs, ISource.cs
+2. Concrete Products --> BackendCourse.cs, FrontendCourse.cs, OnlineSource.cs, OfflineSource.cs
+3. Abstract Creator or Factory --> ISourceCourseFactory.cs.cs
+4. Concrete Creator or Factory --> OfflineSourceCourseFactory.cs, OnlineSourceCourseFactory.cs
+5. Client --> Program.cs
+
+Problems of Simple Factory Pattern in C#
+1. If we need to add a new product (e.g., a new credit card), we need to add a new if-else condition in the GetCreditCard method of the CreditCardFactory class. 
+This violates the open/closed design principle.
+2. We also have a tight coupling between the Factory (CreditCardFactory) and Product classes (MoneyBack, Titanium, and Platinum). We can overcome these problems using the Factory Method Design Pattern, which we will discuss in our upcoming articles.
