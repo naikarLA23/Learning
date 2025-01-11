@@ -1,0 +1,13 @@
+﻿In the Factory Design pattern, we create an object without exposing the Object Creation and Initialization logic to the client,
+and the client will refer to the newly created object using a common interface
+
+Actors :
+1. Product Interface / Abstract Product --> ICreditCard.cs
+2. Concrete Products --> PlatinumCard.cs, MoneyBackCard.cs,TitaniumCard.cs
+3. Creator or Factory --> CreditCardFactory.cs
+4. Client --> Program.cs
+
+Problems of Simple Factory Pattern in C#
+1. If we need to add a new product (e.g., a new credit card), we need to add a new if-else condition in the GetCreditCard method of the CreditCardFactory class. 
+This violates the open/closed design principle.
+2. We also have a tight coupling between the Factory (CreditCardFactory) and Product classes (MoneyBack, Titanium, and Platinum). We can overcome these problems using the Factory Method Design Pattern, which we will discuss in our upcoming articles.

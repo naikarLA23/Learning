@@ -1,0 +1,14 @@
+﻿Factory Method Design Pattern Defines an interface for creating an object but lets the subclasses decide which class to instantiate. 
+The Factory method lets a class defer instantiation to subclasses.
+
+Actors :
+1. Product Interface / Abstract Product --> ICreditCard.cs
+2. Concrete Products --> PlatinumCard.cs, MoneyBackCard.cs, TitaniumCard.cs
+3. Abstract Creator or Factory --> AbstrtractCreditCardFactory.cs
+4. Creator or Factory --> PlatinumCreditCardFactory.cs, TitaniumCreditCardFactory.cs, MoneyBackCreditCardFactory.cs
+5. Client --> Program.cs
+
+Problems of Simple Factory Pattern in C#
+1. If we need to add a new product (e.g., a new credit card), we need to add a new if-else condition in the GetCreditCard method of the CreditCardFactory class. 
+This violates the open/closed design principle.
+2. We also have a tight coupling between the Factory (CreditCardFactory) and Product classes (MoneyBack, Titanium, and Platinum). We can overcome these problems using the Factory Method Design Pattern, which we will discuss in our upcoming articles.
