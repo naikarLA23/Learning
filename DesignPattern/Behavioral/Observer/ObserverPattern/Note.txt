@@ -1,0 +1,22 @@
+﻿
+The Other names of this pattern are Producer/Consumer and Publish/Subscribe.
+
+This Design Pattern is widely used for implementing distributed event-handling systems where an object needs to notify other objects about its state changes without knowing who these objects are. 
+In the Observer Design Pattern, an object (called a Subject) maintains a list of its dependents (called Observers). 
+It notifies them automatically whenever any state changes by calling one of their methods. 
+
+Actors :
+1. Publisher --> IStock.cs  
+2. ConcretePublisher  --> Stock.cs  
+3. Observer --> ITrader.cs  
+4. ConcreteObserver --> Trader.cs
+5. Client --> Program.cs
+
+Advantages of Observer Design Pattern:
+1. Loose Coupling: The subject and observers are loosely coupled. The subject knows nothing about the observers except that they implement the observer interface.
+3. Dynamic Relationships: You can add and remove observers dynamically at runtime.
+3. Broadcast Communication: The subject broadcasts notifications to all interested observers without knowing their details.
+
+Use Cases Observer Design Pattern:
+1. When a change to one object requires changing others, you don’t know how many objects need to be changed.
+2. When an object should be able to notify other objects without making assumptions about who these objects are.

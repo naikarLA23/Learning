@@ -1,0 +1,11 @@
+﻿emplate Method Design Pattern defines a sequence of steps of an algorithm and allows the subclasses to override the steps
+but is not allowed to change the sequence. 
+
+Actors:
+1. AbstractTemplate  --> HouseTemplate.cs
+2. ConcreteTemplates  --> WoodenHouse.cs.cs,ConcreteHouse.cs
+3. Client --> Program.cs
+
+When to use:
+1. When you have a multi-step algorithm, and you want to ensure that the algorithm’s structure remains unchanged while allowing the steps to be overridden by subclasses.
+2. In scenarios where code duplication can be reduced by generalizing the framework in an abstract class i.e TemplateClass.
