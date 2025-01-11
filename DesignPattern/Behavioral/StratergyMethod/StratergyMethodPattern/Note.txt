@@ -1,0 +1,22 @@
+﻿
+The Strategy Design Pattern is a Behavioral Design Pattern that enables selecting an algorithm’s behavior at runtime.
+Instead of implementing a single algorithm directly, run-time instructions specify which of a family of algorithms to use.
+This pattern is ideal when you need to switch between different algorithms or actions in an object dynamically.
+That means the Strategy Design Pattern is used when we have multiple algorithms (solutions) for a specific task, and the client decides which algorithm to use at runtime. 
+
+Actors:
+1. Strategy   --> IPaymentStratergy.cs
+2. ConcreteStrategy   --> Cash.cs, CreditCard.cs, DebitCard.cs, Voucher.cs
+3. Context --> PurchaseContext.cs
+4.Client  --> Program.cs
+
+Use Cases of Strategy Design Pattern:
+1. When you need to switch algorithms used within an object at runtime dynamically.
+2. When you have a lot of conditional statements in different places to execute various behaviors of the same algorithm.
+
+Advantages of Strategy Design Pattern:
+1. Flexibility: Allows dynamically changing the behavior of an object.
+2. Loose Coupling: The strategy classes are independent of each other and the context class, promoting loose coupling.
+3. Reuse: Strategies can be reused across different contexts.
+4. Isolation: Each strategy can be implemented and maintained independently from the others.
+5. Open/Closed Principle: New strategies can be introduced without changing the context.

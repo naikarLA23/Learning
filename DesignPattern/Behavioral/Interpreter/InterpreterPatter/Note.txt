@@ -1,0 +1,12 @@
+﻿The Interpreter Design Pattern is a Behavioral Design Pattern that defines a
+grammatical representation of a language and provides an interpreter to deal with this grammar
+
+Actors:
+1. Context   --> MathExpressionResolver.cs
+2. AbstractExpression   --> IMathOperator.cs, 
+3. ConcretetExpression --> NumberExp.cs, Addition.cs, Substract.cs, Multiplication.cs, Division.cs
+4. Client  --> Program.cs
+
+Advantages of Interpreter Design Pattern:
+1. Easy to Change and Extend Grammars: Grammars can be changed or extended by creating new expressions.
+2. Separation of Concerns: Separates the grammar definition and interpretation logic from the main application logic.
