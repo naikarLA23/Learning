@@ -1,0 +1,76 @@
+{
+  "DevOpsUrl": "https://microsoft.visualstudio.com/",
+  "PersonalAccessToken": "ceduaxtchxebu5em2bskxr4qxq2j5lzscs65ly7dnexa32johvyq",
+  "Projects": [ "Project_1", "Project_2" ],
+  "AssignedUsers": [
+    {
+      "Name": "<<UserName1>>",
+      "EmailId": "<<UserEmail1>>",
+      "SendReport": true
+    },
+    {
+      "Name": "<<UserName2>>",
+      "EmailId": "<<UserEmail2>>",
+      "SendReport": true
+    }
+  ],
+  "RequiredFields": [
+    {
+      "Key": "System.Id",
+      "DisplayName": "Id",
+      "Required": true
+    },
+    {
+      "Key": "System.Title",
+      "DisplayName": "Title",
+      "Required": true
+    },
+    {
+      "Key": "System.AssignedTo",
+      "DisplayName": "Assigned To",
+      "Required": true
+    },
+    {
+      "Key": "System.State",
+      "DisplayName": "State",
+      "Required": true
+    },
+    {
+      "Key": "Microsoft.VSTS.Scheduling.StartDate",
+      "DisplayName": "Start Date",
+      "Required": true
+    },
+    {
+      "Key": "Microsoft.VSTS.Scheduling.TargetDate",
+      "DisplayName": "Target Date",
+      "Required": true
+    },
+    {
+      "Key": "Microsoft.VSTS.Scheduling.StoryPoints",
+      "DisplayName": "Story Points",
+      "Required": true
+    },
+    {
+      "Key": "System.History",
+      "DisplayName": "Comments",
+      "Required": true
+    },
+    {
+      "Key": "System.TeamProject",
+      "DisplayName": "Project",
+      "Required": true
+    }
+  ],
+  "Email": {
+    "SmtpHost": "smtp-mail.outlook.com",
+    "Port": 587,
+    "SenderName": "<<UserName>>,
+    "SenderEmail": "<<UserEmail>>",
+    "SenderPassword": "kiGOduukjwn/x12wcQ7uiA==",
+    "IsPasswordEncrypted": true,
+    "Subject": "DevOps task list - ",
+    "MailTriggerTime": "11",
+    "SkipWeekend": true
+  },
+  "Query": "Select * From WorkItems Where [Assigned To] in (${{AssignedUsers.Name}}) and [State] not in ('Closed','Removed') and [System.TeamProject] in ({{Projects}})"
+}

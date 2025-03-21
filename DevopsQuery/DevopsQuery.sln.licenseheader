@@ -1,0 +1,9 @@
+﻿extensions: designer.cs generated.cs
+extensions: .cs .cpp .h
+//*********************************************************************************************************************************
+// File Name			:	%FileName%
+// Author				:	Anand Naikar <anandyn29@gmail.com> 
+// Description			:	Initial Version
+// Date(dd-MM-yyyy)		:	%CurrentDay%-%CurrentMonth%-%CurrentYear%
+// Copyright (c) | All Rights Reserved
+//*********************************************************************************************************************************
