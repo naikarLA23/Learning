@@ -1,6 +1,6 @@
 Developed using .Net6
 Author : Anand Naikar
-Email : anandyn29@gmail.com
+Email : LA.Naikar23@gmail.com
 
 1. Below things to be configured in 'DevopsConfig.json'
    a. DevOpsUrl -  to your orginsation Devops URL
