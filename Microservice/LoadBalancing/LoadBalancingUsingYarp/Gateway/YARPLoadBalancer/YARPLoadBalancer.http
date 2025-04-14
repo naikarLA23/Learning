@@ -1,0 +1,6 @@
+@YARPLoadBalancer_HostAddress = http://localhost:5140
+
+GET {{YARPLoadBalancer_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
