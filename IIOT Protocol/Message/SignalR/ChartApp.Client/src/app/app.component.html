@@ -1,0 +1,3 @@
+<div style="display: block" *ngIf='chartOptions'   >
+  <canvasjs-chart [options]="chartOptions" (chartInstance)="getChartInstance($event)"></canvasjs-chart>
+</div>
